@@ -1,0 +1,38 @@
+.hero_image {
+    background-image: url("../images/tropical-greens-3392323_1920.jpg");
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero_box {
+    width: 180px;
+    height: 180px;
+    background-color: $color_one;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero_text {
+    text-align: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+
+    h1 {
+        font-family: $font_one;
+    }
+
+    p {
+        font-family: $font_two;
+    }
+
+
+}

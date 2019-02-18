@@ -1,0 +1,583 @@
+.intro_text {
+    padding: 0.5em;
+    margin: 0;
+
+    @include tablet {
+        padding: 1em 4em;
+    }
+
+    @include desktop {
+        padding: 1em 10em;
+    }
+
+    h2 {
+        font-family: $font_one;
+        font-size: 1.8em;
+        padding-bottom: 0.5em;
+
+        @include tablet {
+            font-size: 2.2em;
+            padding-bottom: 1em;
+        }
+
+        @include desktop {
+            font-size: 2.5em;
+            padding-bottom: 1em;
+        }
+    }
+
+    .primary_intro_paragraph {
+        font-family: $font_two;
+        font-size: 1em;
+
+        @include tablet {
+            font-size: 1.2em;
+        }
+
+        @include desktop {
+            font-size: 1.5em;
+        }
+    }
+
+    .secondary_intro_paragraph {
+        font-family: $font_three;
+        font-size: 0.9em;
+
+        @include tablet {
+            font-size: 0.8em;
+        }
+
+        @include desktop {
+            font-size: 1em;
+        }
+    }
+
+/*intro_text ends*/
+}
+
+/*Picture breaks*/
+
+.break_point_img_one {
+    background-image: url("../images/rawpixel-555902-unsplash.jpg");
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    @include tablet {
+        height: 300px;
+    }
+
+    @include desktop {
+        height: 400px;
+    }
+}
+
+.break_point_img_two {
+    background-image: url("../images/tropical-greens-3392323_1920.jpg");
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    @include tablet {
+        height: 300px;
+    }
+
+    @include desktop {
+        height: 400px;
+    }
+}
+
+.img_two_box {
+    width: 320px;
+    height: 180px;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include tablet {
+        width: 700px;
+        height: 200px;
+    }
+
+    @include desktop {
+        width: 900px;
+        height: 250px;
+    }
+}
+
+.img_two_text {
+
+    padding: 2em;
+
+    @include tablet {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    h4 {
+        font-family: $font_two;
+        padding-bottom: 0.1em;
+        font-size: 1.1em;
+
+        @include tablet {
+            padding-bottom: 0.3em;
+            font-size: 1.1em;
+        }
+
+        @include desktop {
+            padding-bottom: 0.5em;
+            font-size: 1.5rem;
+        }
+    }
+
+    p {
+        font-family: $font_three;
+        padding-bottom: 0.1em;
+        font-size: 0.8em;
+
+        @include tablet {
+            padding-bottom: 0.3em;
+            font-size: 0.8em;
+        }
+
+        @include desktop {
+            padding-bottom: 0.5em;
+            font-size: 1rem;
+        }
+    }
+
+    @include tablet {
+        padding-bottom: 0.7em;
+    }
+
+    @include desktop {
+        padding-bottom: 1em;
+    }
+}
+
+.contact_box {
+    width: 120px;
+    height: 40px;
+    border: 1px solid $color_one;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include tablet {
+        width: 160px;
+        height: 60px;
+        top: 110%;
+    }
+
+    @include desktop {
+        width: 200px;
+        height: 80px;
+        top: 115%;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color_one;
+    }
+
+    h4 {
+        font-size: 0.9em;
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+
+        @include tablet {
+            padding-top: 1.2em;
+            padding-bottom: 1.2em;
+            font-size: 1.2em;
+        }
+
+        @include desktop {
+            padding-top: 1.1em;
+            padding-bottom: 1.4em;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.contact_box:hover {
+    background-color: $color_one;
+
+    h4 {
+        color: white;
+    }
+}
+
+.break_point_img_three {
+    background-image: url("../images/photos-by-lanty-719702-unsplash.jpg");
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    @include tablet {
+        height: 300px;
+    }
+
+    @include desktop {
+        height: 400px;
+    }
+}
+
+.view_gallery_box {
+    width: 200px;
+    height: 60px;
+    background-color: $color_one;
+    opacity: 0.8;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include tablet {
+        width: 250px;
+        height: 80px;
+    }
+
+    @include desktop {
+        width: 350px;
+        height: 100px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    h4 {
+        font-size: 1em;
+        padding-top: 1.2em;
+        padding-bottom: 1.2em;
+        color: white;
+        font-family: $font_two;
+
+        @include tablet {
+            padding-top: 1.4em;
+            padding-bottom: 1.4em;
+            font-size: 1.2em;
+        }
+
+        @include desktop {
+            padding-top: 1.5em;
+            padding-bottom: 1.5em;
+            font-size: 1.5rem;
+        }
+    }
+
+    h4:hover {
+        color: #BD8585;
+    }
+
+}
+
+.break_point_img_four {
+    background-image: url("../images/tropical-greens-3392323_1920.jpg");
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    @include tablet {
+        height: 300px;
+    }
+
+    @include desktop {
+        height: 400px;
+    }
+}
+
+.img_four_box {
+    width: 320px;
+    height: 180px;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include tablet {
+        width: 700px;
+        height: 200px;
+    }
+
+    @include desktop {
+        width: 900px;
+        height: 250px;
+    }
+}
+
+.img_four_text {
+    padding: 0.5em;
+
+    @include tablet {
+        padding: 1em 3em;
+    }
+
+    @include desktop {
+        padding: 0.5em 5em;
+    }
+
+    h4 {
+        font-family: $font_two;
+        padding-bottom: 0.2em;
+        font-size: 0.9em;
+
+        @include tablet {
+            padding-bottom: 0.3em;
+            font-size: 1.2em;
+        }
+
+        @include desktop {
+            padding-bottom: 0.5em;
+            font-size: 1.5rem;
+        }
+    }
+
+    p {
+        font-family: $font_three;
+        font-size: 0.6em;
+
+        @include tablet {
+            font-size: 0.8em;
+        }
+
+        @include desktop {
+            font-size: 1rem;
+        }
+    }
+
+    i {
+        font-size: 1em;
+        padding-bottom: 0.2em;
+
+        @include tablet {
+            font-size: 2em;
+            padding-bottom: 0.3em;
+
+        }
+
+        @include desktop {
+            font-size: 2em;
+            padding-bottom: 0.5em;
+
+        }
+    }
+
+}
+
+.headings h2 {
+    font-family: $font_one;
+    font-size: 1.5em !important;
+    text-align: center;
+    padding: 1em 0;
+
+    @include tablet {
+        font-size: 2em !important;
+    }
+
+    @include desktop {
+        font-size: 2.2em !important;
+    }
+}
+
+.social_paragraph {
+    font-family: $font_two;
+    font-size: 1em;
+    padding: 1em 0;
+    text-align: center;
+
+    @include tablet {
+        font-size: 1em;
+    }
+
+    @include desktop {
+        font-size: 1.2em;
+    }
+}
+
+/*Gallery section*/
+
+.gallery_section {
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    @include tablet {}
+
+    @include desktop {}
+
+}
+
+.social_img_frame_one {
+    background-image: url("../images/annie-gray-376049-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+    padding: 0;
+    //Text reveal
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+    margin: 0.2em auto;
+
+    @include tablet {}
+
+    @include desktop {}
+}
+
+.social_img_frame_two {
+    background-image: url("../images/almos-bechtold-534205-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+    padding: 0;
+    //Text reveal
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+    margin: 0.2em auto;
+
+    @include tablet {}
+
+    @include desktop {}
+}
+
+.social_img_frame_three {
+    background-image: url("../images/alex-loup-392625-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+    padding: 0;
+    //Text reveal
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+    margin: 0.2em auto;
+
+    @include tablet {}
+
+    @include desktop {}
+}
+
+.social_img_frame_four {
+    background-image: url("../images/mandy-von-stahl-717419-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+    padding: 0;
+    //Text reveal
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+    margin: 0.2em auto;
+
+    @include tablet {}
+
+    @include desktop {}
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .social_img_frame_one .social_interaction,
+    .social_img_frame_two .social_interaction,
+    .social_img_frame_three .social_interaction,
+    .social_img_frame_four .social_interaction {
+        background-color: $color_one;
+        opacity: 0.7;
+    }
+
+}
+
+@include desktop {
+
+    .social_img_frame_one:hover .social_interaction,
+    .social_img_frame_two:hover .social_interaction,
+    .social_img_frame_three:hover .social_interaction,
+    .social_img_frame_four:hover .social_interaction {
+        background-color: $color_one;
+        opacity: 0.7;
+    }
+
+}
+
+.social_interaction {
+    width: 280px;
+    height: 280px;
+
+    @include desktop {
+        transition: .5s ease;
+        opacity: 0;
+    }
+
+}
+
+.social_interaction h5 {
+    padding-left: 1.7em;
+    padding-top: 2em;
+    font-family: $font_three;
+    color: white;
+
+    i {
+        padding: 0 1em;
+    }
+
+}
+
+.social_interaction_text {
+    text-align: center;
+    padding: 0 2em 1em 2em;
+    font-family: $font_three;
+    color: white;
+}

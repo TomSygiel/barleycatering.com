@@ -1,0 +1,115 @@
+.how_it_works_section {
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 2em;
+
+    h3 {
+        font-family: $font_one;
+        font-size: 3em;
+        padding: 1em 0;
+    }
+
+    h3:before,
+    h3:after {
+        background-color: $color_one;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 20%;
+    }
+
+    h3:before {
+        right: 0.5em;
+        margin-left: -50%;
+    }
+
+    h3:after {
+        left: 0.5em;
+        margin-right: -50%;
+    }
+
+    h4 {
+        font-family: $font_two;
+        font-size: 1.2em;
+        padding-bottom: 1em;
+    }
+
+    p {
+        font-family: $font_three;
+        font-size: 1em;
+        padding: 0 2em 1em 2em;
+    }
+
+/*.how_it_works_section ends*/
+}
+
+.menus_section_one,
+.menus_section_two {
+    display: flex;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .menu_box {
+        max-width: 120px;
+        flex: 1;
+        border: 1px solid $color_one;
+        background-color: white;
+        margin: 0.5em;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color_one;
+    }
+
+    h4 {
+        font-family: $font_two;
+        font-size: 0.8em;
+        padding-top: 1.2em;
+        padding-bottom: 1.2em;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .menu_box:hover {
+        background-color: $color_one;
+
+        h4 {
+            color: white;
+        }
+    }
+
+    @include tablet {
+
+        .menu_box {
+            max-width: 140px;
+            margin: 1em;
+        }
+
+        h4 {
+            font-size: 1em;
+            padding-top: 1.2em;
+            padding-bottom: 1.2em;
+            font-weight: bold;
+        }
+
+    }
+
+    @include desktop {
+
+        .menu_box {
+            max-width: 180px;
+            margin: 2em;
+        }
+
+        h4 {
+            font-size: 1.3em;
+            padding-top: 1.2em;
+            padding-bottom: 1.2em;
+            font-weight: bold;
+        }
+    }
+}

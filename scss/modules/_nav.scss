@@ -1,0 +1,38 @@
+.navigation {
+    padding: 1em;
+    margin: 0;
+    justify-content: space-around;
+
+    @include tablet {
+        padding: 1em 5em;
+    }
+
+    @include desktop {
+        padding: 1.5em 20em;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color_one;
+    }
+
+    li {
+        font-family: $font_two;
+        font-size: 0.8em;
+        font-weight: bold;
+
+        @include tablet {
+            font-size: 1.2em;
+        }
+    }
+
+    a:hover {
+        color: #BD8585;
+    }
+
+/*navigation ends here*/
+}
