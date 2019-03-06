@@ -1,6 +1,8 @@
 # barleycatering.com
 
-UX/Graphic design assignment. The website is built after classmate's mock up. Original design: Ida Bennetsen
+UX/Graphic design assignment. 
+The website is built after classmate's mock up. Original design: Ida Bennetsen
+
 Main requirements: 
 -Website is to follow the design in a given mock up (font, color scheme and placement of elements)
 -Website should follow accessibility requirements
